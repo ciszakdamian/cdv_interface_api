@@ -13,7 +13,6 @@ for char in text:
     arr.append(ord(char))
 
 #get unique
-arr.sort()
 unique = []
 for x in arr:
     if x not in unique:
@@ -36,6 +35,7 @@ for x in range(len(count)):
         word += count[x][0]
 
 print(word)
+
 
 # for x in count:
 #     if count[]
