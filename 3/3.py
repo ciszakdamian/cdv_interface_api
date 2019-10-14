@@ -1,11 +1,11 @@
+#http://www.pythonchallenge.com/pc/def/ocr.html
+
 def sort_second(val):
     return val[1]
 
 #load data
 file = open('data.txt')
 text = file.read()
-
-#print(text)
 
 #load data to list
 arr = []
@@ -26,8 +26,6 @@ for x in unique:
 #sort by chars amount
 count.sort(key=sort_second)
 
-#print(count)
-
 word = ''
 #print only uniq char = 1
 for x in range(len(count)):
@@ -35,20 +33,3 @@ for x in range(len(count)):
         word += count[x][0]
 
 print(word)
-
-
-# for x in count:
-#     if count[]
-
-
-
-
-
-
-
-# arr.sort()
-# print(arr)
-# print(arr.count(97))
-# print(chr(97))
-
-
