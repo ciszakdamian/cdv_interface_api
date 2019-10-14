@@ -1,35 +1,37 @@
+def sort_second(val):
+    return val[1]
+
+#load data
 file = open('data.txt')
 text = file.read()
 
-#print(text)
-
-text = "Damiana"
-
 print(text)
 
+#load data to list
 arr = []
-print(type(arr))
 for char in text:
     arr.append(ord(char))
 
+#get unique
 arr.sort()
+unique = []
+for x in arr:
+    if x not in unique:
+        unique.append(x)
 
-print(arr)
-
+#count
 count = []
-c = 0
-for i in range(len(arr)):
-    if i != len(arr) - 1:
-        if arr[i] == arr[i+1]:
-            print(count[i-1])
-            count.append([arr[i], i+1])
-        else:
-            count.append([arr[i], 1])
-    else:
-        count.append([arr[i], 1])
+for x in unique:
+    count.append((chr(x), arr.count(x)))
 
-
+#sort by chars amount
+count.sort(key=sort_second)
 print(count)
+
+
+
+
+
 
 
 # arr.sort()
