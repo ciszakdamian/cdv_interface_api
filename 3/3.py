@@ -5,7 +5,7 @@ def sort_second(val):
 file = open('data.txt')
 text = file.read()
 
-print(text)
+#print(text)
 
 #load data to list
 arr = []
@@ -22,11 +22,23 @@ for x in arr:
 #count
 count = []
 for x in unique:
-    count.append((chr(x), arr.count(x)))
+    count.append([chr(x), arr.count(x)])
 
 #sort by chars amount
 count.sort(key=sort_second)
-print(count)
+
+#print(count)
+
+word = ''
+#print only uniq char = 1
+for x in range(len(count)):
+    if count[x][1] == 1:
+        word += count[x][0]
+
+print(word)
+
+# for x in count:
+#     if count[]
 
 
 
