@@ -1,24 +1,35 @@
-#http://www.pythonchallenge.com/pc/def/274877906944.html
+#http://www.pythonchallenge.com/pc/def/ocr.html
 
-import string
-def translate(text):
-    decode = ""
-    for char in text:
-        code = ord(char)
+def sort_second(val):
+    return val[1]
 
-        if 97 > code <= 120:
-            number = code
-        else:
-            if code == 121 or code == 122:
-                # print(code)
-                number = code - 26 + 2
-                # print("N"+str(number))
-            else:
-                number = code + 2
+#load data
+file = open('data.txt')
+text = file.read()
 
-        decode += chr(number)
-    return decode
+#load data to list
+arr = []
+for char in text:
+    arr.append(ord(char))
 
-print(translate("g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj."))
+#get unique
+unique = []
+for x in arr:
+    if x not in unique:
+        unique.append(x)
 
-print(translate("map"))
+#count
+count = []
+for x in unique:
+    count.append([chr(x), arr.count(x)])
+
+#sort by chars amount
+count.sort(key=sort_second)
+
+word = ''
+#print only uniq char = 0
+for x in range(len(count)):
+    if count[x][1] == 1:
+        word += count[x][0]
+
+print(word)
