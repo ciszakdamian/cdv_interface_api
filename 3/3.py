@@ -1,24 +1,21 @@
 #http://www.pythonchallenge.com/pc/def/equality.html
 
-import string
+import re
 
 #load data from file
 file = open("data.txt")
 data = file.read()
 
-#generate ascci lowercase code
-alphabet = string.ascii_lowercase
+#search match regex
+regex = re.compile('[^A-Z][A-Z]{3}([a-z])[A-Z]{3}[^A-Z]')
+data = regex.findall(data)
 
-lowercase_ascii = []
-for char in alphabet:
-    lowercase_ascii.append(ord(char))
+#extract lowercase
+regex = re.compile('([a-z])')
+t = []
+for x in data:
+    t += regex.findall(x)
 
-print(lowercase_ascii)
+text = ''.join(t)
 
-#find lowercase later
-#refex ([A-Z][A-Z][A-Z][a-z][A-Z][A-Z][A-Z])
-lowercase = ''
-
-
-
-print(lowercase)
+print(text)
