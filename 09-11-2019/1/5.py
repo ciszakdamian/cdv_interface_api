@@ -1,10 +1,12 @@
-file = open("file.txt", "a")
+file = open("file.txt", "w")
 
-while ()
+text = ''
+while True:
+    line = input("Podaj linie tekstu: ")
+    if not line.strip():
+        break
+    text += str(line+'\n')
 
-# dane = input("Podaj tekst: ")
-# print(dane)
-#
-# file.write(dane)
-#
-# file.close()
+file.write(text)
+file.close()
+print('Plik file.txt został utworzony.')
