@@ -19,6 +19,7 @@ Napisz program, w którym zdefiniujesz funkcję zwracającą pole i obwód koła
 Napisz program, który w pliku tekstowym o nazwie text.txt zapisze wprowadzany przez użytkownika tekst. Zapisywanie powinno zostać zakończone po napotkaniu pustego wiersza.
 
 6. Serializacja typów sekwencyjnych do pliku
-Napisz program, który zapisze w pliku people.txt podane przez użytkownika dane osobowe: imię, nazwisko i rok urodzenia. Po wprowadzeniu pustego wiersza wyświetl dane zapisane w pliku w formacie:
+Napisz program, który zapisze w pliku people.txt podane przez użytkownika dane osobowe: imię, nazwisko i rok urodzenia.
+Po wprowadzeniu pustego wiersza wyświetl dane zapisane w pliku w formacie:
  1. Imię: imię_pierwszej_osoby, Nazwisko: nazwisko_pierwszej_osoby, Wiek: wiek_pierwszej_osoby
  2. Imię: imię_drugiej_osoby, Nazwisko: nazwisko_drugiej_osoby, Wiek: wiek_drugiej_osoby
