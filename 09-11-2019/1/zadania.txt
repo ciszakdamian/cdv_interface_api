@@ -1,0 +1,24 @@
+Interfejsy API w eksploracji danych
+Wbudowane struktury danych, funkcje, pliki
+Do realizacji zadań wykorzystaj środowisko przygotowane przez prowadzącego.
+
+1. Lista (list)
+Napisz program, który zapełni listę pięcioma nazwami miast i wypisze te zaczynające się od liter późniejszych w alfabecie niż K, a następnie wypisze wszystkie dłuższe niż 6-znakowe.
+
+2. Słownik (dictionary)
+Napisz program, który po podaniu numeru miesiąca poda jego nazwę w języku polskim.
+Do przechowania numerów miesięcy i odpowiadających im nazw wykorzystaj słownik.
+
+3. Zbiór (set)
+Napisz program, który zdefiniuje 2 zbiory a następnie wyświetli ich logiczną sumę, część wspólną oraz różnicę.
+
+4. Krotka (tuple)
+Napisz program, w którym zdefiniujesz funkcję zwracającą pole i obwód koła na podstawie podanego promienia.
+
+5. Zapis tekstu do pliku
+Napisz program, który w pliku tekstowym o nazwie text.txt zapisze wprowadzany przez użytkownika tekst. Zapisywanie powinno zostać zakończone po napotkaniu pustego wiersza.
+
+6. Serializacja typów sekwencyjnych do pliku
+Napisz program, który zapisze w pliku people.txt podane przez użytkownika dane osobowe: imię, nazwisko i rok urodzenia. Po wprowadzeniu pustego wiersza wyświetl dane zapisane w pliku w formacie:
+ 1. Imię: imię_pierwszej_osoby, Nazwisko: nazwisko_pierwszej_osoby, Wiek: wiek_pierwszej_osoby
+ 2. Imię: imię_drugiej_osoby, Nazwisko: nazwisko_drugiej_osoby, Wiek: wiek_drugiej_osoby
