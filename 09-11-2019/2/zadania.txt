@@ -1,0 +1,42 @@
+Interfejsy API w eksploracji danych
+Biblioteki NumPy i Pandas
+
+1. NumPy - macierze
+Korzystając z biblioteki NumPy utwórz dwie dwuwymiarowe macierze z liczbami, a następnie wyznacz ich sumę oraz iloczyn.
+
+2. NumPy - Błądzenie losowe
+Napisz program, który utworzy tablicę NumPy z początkowym elementem 0.
+Tablicę wypełnij 100 liczbami, z których każda będzie sumą poprzedniej oraz wartości wylosowanej ze zbioru (-1, 1).
+Utwórz wykres na podstawie danych w tablicy
+Wyznacz minimalną oraz maksymalną wartość w utworzonej tablicy.
+Zasymuluj utworzenie tablicy  50 razy i sprawdź w ilu przypadkach udało się przekroczyć liczbę 30 w dowolnym kroku. Wyniki zilustruj na wykresie.
+
+3. Pandas series
+Napisz program, który utworzy obiekt Pandas Series na podstawie każdego z poniższych elementów:
+import numpy as np
+mylist = list('abcedfghijklmnopqrstuvwxyz')
+myarr = np.arange(26)
+mydict = dict(zip(mylist, myarr))
+
+4. Pandas DataFrame
+Napisz program w którym na podstawie poniższej tabeli województw utworzysz obiekt Pandas DataFrame o indeksie zawierającym nazwy województw i następnie:
+
+Wyznacz miasta wojewódzkie w województwach o powierzchni mniejszej niż 20000 km²
+Utwórz nowy obiekt DataFrame zawierający województwa w których liczba ludności przekracza 2000000
+Dodaj wiersz:
+wielkopolskie 30 Poznań 29 826,50 3 475 323
+Posortuj dane po liczbie ludności malejąco
+Przesuń kolumnę “miasto wojewódzkie” na ostatnie miejsce
+Zmodyfikuj nazwy województw tak aby zaczynały się wielka literą
+Utwórz obiekt typu series zawierający nazwy województw w indeksie i wartość logiczną oznaczającą czy średnia liczba ludności na km² przekracza 140
+Usuń wiersz zawierający woj. Lubuskie
+Zastosuj funkcję pandas.DataFrame.describe() i wyznacz parametry statystyczne dla analizowanego zbioru danych
+
+tabela.png
+
+5. Pandas DataFrame
+Utwórz listę 100  losowych liczb całkowitych
+Przekształć listę 1-wymiarową w listę  2-wymiarową o wymiarze 10x10
+Na podstawie powstałej macierzy utwórz obiekt DataFrame, jako indeks wierszy wykorzystaj kolejne litery alfabetu (a, b, ...),  a jako indeks kolumn kolejne liczby (1, 2...)
+Utwórz nowy obiekt DataFrame zawierający co drugi wiersz i kolumny o indeksie większym niż 5
+Utwórz macierz zawierającą wartości true w komórkach odpowiadających wartościom logicznym z ramki danych utworzonej w poprzednim podpunkcie
