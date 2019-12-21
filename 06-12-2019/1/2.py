@@ -1,21 +1,22 @@
 import re
 
 
-def validate_number(number):
-    regex = "^\\d{9}$|^\\d{3}\\s\\d{2}\\s\\d{2}\\s\\d{2}$|^(\\+\\d{2}\\s)?\\d{3}-\\d{3}-\\d{3}$"
-    x = re.search(regex, number)
+def validate_name(name):
+    regex = "^\\s*[a-zA-Z]*\\s{1}[a-zA-Z]*$"
+    x = re.search(regex, name)
     if x is not None:
         r = 'Match'
     else:
         r = 'No match'
-    return r + ': ' + number
+    return r+': '+name
 
 
-print(validate_number('+48 0142-345-678'))
-print(validate_number('012-345-67'))
-print(validate_number('0123456781'))
-print(validate_number('012 34 564 78'))
-print(validate_number('+48 012-345-678'))
-print(validate_number('012-345-678'))
-print(validate_number('012345678'))
-print(validate_number('012 34 56 78'))
+print(validate_name('Da4234mian Cisz424ak'))
+print(validate_name('Damian $Ciszak'))
+print(validate_name('Damian  Ciszak'))
+print(validate_name('Da mian Ciszak'))
+print(validate_name('Damian Ciszak?'))
+print(validate_name('Damian Ciszak'))
+print(validate_name('damian ciszak'))
+
+# print('Imie: '+name+'\nNazwisko: '+surname)
